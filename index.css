@@ -1,0 +1,170 @@
+body{
+  background-color: lightgray;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: "adidas_bold";
+  src: url("../byte/public/extra/adidas_bold.otf");
+}
+
+@font-face {
+  font-family: "adidas_light";
+  src: url("../byte/public/extra/adidas_light.otf");
+}
+
+#contenedor{
+  display: flex;
+  width: calc(100vw - 20px);
+  height: calc(100vh - 50px);
+  padding: 10px;
+}
+
+#bar-options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  box-shadow: 0px 4px 12px -4px rgba(0, 0, 0, 0.23);
+}
+
+#input-datos, #operaciones{
+  width: 49.5%;
+  height: 100%;
+}
+
+#operaciones{
+  padding-left: 1%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+#input-datos-info{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  margin: 0px 0px 5px 0px;
+}
+
+#input-datos-info label{
+  width: 45%;
+  height: 100%;
+  text-align: center;
+  background: black;
+  color: white;
+  font-family: "adidas_light";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-datos-info input{
+  width: 40%;
+  margin: 0px !important;
+  border: 0px !important;
+  height: 100%;
+  outline: white;
+  padding: 0px 10px;
+}
+
+
+#input-datos-info button{
+  width: 15%;
+  height: 100%;
+  border: 0px !important;
+  color: white;
+  background: black;
+}
+
+#input-datos-ejecutar{
+  display: none;
+  float: right;
+  right: 0px;
+  margin: 5px 0px 10px;
+}
+
+#input-datos-tab, #input-datos-table td input{
+  width: 100%;
+}
+
+#input-datos-tab, #input-datos-table td{
+  padding-right: 5px;
+}
+
+
+#input-datos-ejecutar{
+  border-radius: 0px !important;
+  color: white !important;
+  background: black !important;
+  border: 0px !important;
+  box-shadow: 3px 3px 0px 0px !important;
+  font-family: "adidas_light";
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.operaciones-datos{
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #FFFFFF;
+  width: 100%;
+  text-align: center;
+}
+
+.operaciones-datos  td, .operaciones-datos th {
+  width: 50%;
+  border: 1px solid #FFFFFF;
+  padding: 3px 5px;
+}
+
+.operaciones-datos td {
+  font-size: 13px;
+}
+
+.operaciones-datos td:nth-child(even) {
+  background: #EBEBEB;
+}
+
+.operaciones-datos thead {
+  background: #FFFFFF;
+  border-bottom: 2px solid #333333;
+}
+
+.operaciones-datos th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  border-left: 2px solid #333333;
+}
+
+.operaciones-datos th:first-child {
+  border-left: none;
+}
+
+.frecuencias{
+  margin-bottom: 10px;
+}
+
+@media query {
+      flex-direction: column;
+}
+
+@media (max-width: 710px) {
+  #contenedor {
+    width: calc(100vw - 30px);
+    padding: 10px 0px 10px 10px;
+    flex-direction: column;
+  }
+
+  #input-datos, #operaciones {
+    width: calc(100% - 10px) !important;
+    padding: 0px;
+  }
+}

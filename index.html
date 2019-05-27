@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora de Estadistica</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="bar-options">
+      <label>Agrupados</label>
+      <input type="radio" name="dato" id="da_radio" value="1">
+      <label style="border-left: 1px solid #0000006b; padding: 0px 0px 0px 8px;">
+        No agrupados
+      </label>
+      <input type="radio" name="dato" id="dna_radio" value="2" checked>
+    </div>
+    <div id="contenedor">
+      <div id="input-datos">
+        <div id="input-datos-info">
+          <label for="">Numero de datos</label>
+          <input type="number" id="input-datos-muestra"> <button type="button" id="input-datos-add">+</button>
+        </div>
+        <table id="input-datos-table">
+          <tbody>
+          </tbody>
+        </table>
+        <button id="input-datos-ejecutar">Ejecutar</button>
+      </div>
+      <div id="operaciones">
+      </div>
+    </div>
+  </body>
+  <script src="datos_agrupados.js"></script>
+  <script src="datos_no_agrupados.js"></script>
+  <script src="index.js"></script>
+</html>
